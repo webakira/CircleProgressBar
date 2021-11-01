@@ -3,7 +3,7 @@
 function initScripts() {
 	document.removeEventListener('DOMContentLoaded', initScripts);
 	function init() {
-		initBreadcrumbsSlider();
+		initProgressBar();
 	}
 
 	@@include('function.js')

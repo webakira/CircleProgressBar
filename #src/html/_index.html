@@ -1,13 +1,37 @@
 <div class="_ptb-min example _gray">
 	<div class="_container">
 		<div class="title">
-			<div class="title__head">Название</div>
+			<div class="title__head">Circle Progress Bar</div>
 			<div class="title__sub"><b>Технологии:</b> <span>HTML | JS | SCSS\CSS</span></div>
-			<div class="title__sub"><b>Плагины:</b> <a href="https://swiperjs.com/" target="_blank">плагин</a></div>
 		</div>
 
-
 		<!-- Разметка элемента -->
+		<div class="progress-circle__row">
+			<!-- 
+			skill - стандартный
+			Значение процентов прописывать в теге <circle>
+		-->
+			<div class="progress-circle__col">
+				<div class="progress-circle__item">
+					<!-- data-cpb="размер,проценты,размер рамки,размер постоянной рамки, вкл\выкл анимацию" -->
+					<div class="skill" data-cpb="450,15,10,20,animate">
+						<div class="skill__outer" data-cpb-outer>
+							<div class="skill__inner" data-cpb-inner>
+								<div class="skill__number" data-cpb-number>
+								</div>
+							</div>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+							<circle />
+							<!-- <circle style="stroke-dashoffset: calc(534 - (534 * 0.75))" cx="95" cy="95" r="85" /> -->
+						</svg>
+					</div>
+
+				</div>
+			</div>
+
+
+		</div>
 
 	</div>
 </div>

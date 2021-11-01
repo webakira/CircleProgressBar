@@ -1,1 +1,27 @@
 // Визуальные настройки элемента
+.progress-circle {
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -30px -30px -30px;
+		@media (max-width: $md5 + px) {
+			margin: 0 -15px -30px -15px;
+		}
+		@media (max-width: $md6 + px) {
+			justify-content: center;
+		}
+	}
+
+	&__col {
+		padding: 0 30px;
+		margin-bottom: 30px;
+		flex: 0 0 auto;
+		@media (max-width: $md5 + px) {
+			padding: 0 15px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__item {
+	}
+}

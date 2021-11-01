@@ -1,1 +1,41 @@
 // Основные настроки элемента, необходимые для его работы
+
+.skill {
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+	&__outer {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		border-style: solid;
+		border-color: #673ab7;
+	}
+	&__inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: transparent;
+	}
+	&__number {
+		font: 500 36px/1 $fontfamily;
+		color: $mainColor;
+	}
+	circle {
+		fill: none;
+		stroke: $secondColor;
+		// calc(2 x 3.14 x 85) | C = 2 x PI x R
+		transform: rotate(-90deg);
+		stroke-linecap: round;
+		transform-origin: center center;
+	}
+	svg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
