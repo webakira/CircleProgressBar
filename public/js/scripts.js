@@ -66,11 +66,11 @@ function initProgressBar() {
 				}
 
 				if (animate) {
-					circle.style.display = 'block';
 					const animTimeout = animate[1] != '' ? animate[1] : 0;
 					const animDuration = animate[0] != '' ? animate[0] : 3000;
 					const animName = animate[2] != '' ? animate[2] : '';
 					setTimeout(() => {
+						circle.style.display = 'block';
 						animation({
 							duration: animDuration,
 							timing(timeFraction) {
