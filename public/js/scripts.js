@@ -61,10 +61,12 @@ function initProgressBar() {
 					circle.setAttribute('stroke-dashoffset', strokeDashOffset);
 					if (animate) {
 						circle.setAttribute('stroke-dashoffset', strokeDashArray);
+						circle.style.display = 'none';
 					}
 				}
 
 				if (animate) {
+					circle.style.display = 'block';
 					const animTimeout = animate[1] != '' ? animate[1] : 0;
 					const animDuration = animate[0] != '' ? animate[0] : 3000;
 					const animName = animate[2] != '' ? animate[2] : '';
