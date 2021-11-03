@@ -52,6 +52,10 @@ __data-cpb-animate__="duration,delay,property"
 * *delay* - Задержка перед стартом
 * *property* - Тип анимации (Типы анимации смотрите ниже)
 
+__data-cpb-animate-stop__
+
+Это НЕ обязательный аттрибут. Отвечает за [запуск анимации по событию](#JS-Запуск-анимации-по-событию).
+
 #### Типы анимации ####
 
 [Примеры всех анимаций](https://easings.net/ru)
@@ -86,6 +90,39 @@ __data-cpb-animate__="duration,delay,property"
 * easeInBounce
 * easeOutBounce
 * easeInOutBounce
+
+## JS Запуск анимации по событию ##
+
+Часто бывают задачи, когда нужно запустить анимацию по определённому событию. 
+
+Для этого:
+1. Добавляем аттрибут __data-cpb-animate-stop__ к нужному прогрессбару;
+2. При срабатывагии нужного события, удаляем, у конкретного прогрессбара, аттрибут __data-cpb-animate-stop__;
+3. Запускаем функцию прогрессбара, только для текущего элемента;
+
+> __! Важно__ - Функция прогрессбара *progressBarStart(array)* принимает только массивы.
+
+ __Выглядеть это будет примерно так:__
+
+### HTML ###
+
+	<div class="skill" data-cpb-animate-stop data-cpb="200,100,20,10" data-cpb-animate="3000,0,easeInOutBack">
+		...
+	</div>
+
+### JS ###
+	const startElements = document.querySelectorAll('[data-cpb-animate-stop]');
+	if (startElements.length > 0) {
+		startElements.forEach(el => {
+			el.addEventListener('click', function (e) {
+				if (el.getAttribute('data-cpb-animate-stop') != null) {
+					el.removeAttribute('data-cpb-animate-stop');
+					progressBarStart([el]);
+				}
+			});
+		});
+	}
+	
 
 ---
 
