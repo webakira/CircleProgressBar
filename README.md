@@ -1,8 +1,8 @@
-# Хлебные крошки в виде слайдера #
+# Circle Progress Bar #
 
 Хлебные крошки в виде слайдера с использованием swiper.js.
 
-[Ссылка на демо](https://webakira.github.io/breadcrumbsSlider/public/index.html)
+[Ссылка на демо](https://webakira.github.io/CircleProgressBar/public/index.html)
 
 > ## Структура GULP ##
 > ### Как запустить ###
