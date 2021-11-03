@@ -1,6 +1,6 @@
 # Circle Progress Bar #
 
-Круглый прогресс бар с возможностью анимирования
+Круглый прогресс бар который можно анимировать.
 
 [Ссылка на демо](https://webakira.github.io/CircleProgressBar/public/index.html)
 
