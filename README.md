@@ -4,7 +4,11 @@
 
 [Посмотреть демо](https://webakira.github.io/CircleProgressBar/public/index.html)
 
+
+
 ## HTML разметка ##
+
+```html
 <div>
 	
 	<div class="skill" data-cpb="200,100,20,10" data-cpb-animate="3000,0,easeInOutBack">
@@ -20,6 +24,7 @@
 	</div>
 	
 </div>
+```
 
 ### Описание аттрибутов ###
 
@@ -106,11 +111,15 @@ __data-cpb-animate-stop__
 
 ### HTML ###
 
+```html
 	<div class="skill" data-cpb-animate-stop data-cpb="200,100,20,10" data-cpb-animate="3000,0,easeInOutBack">
 		...
 	</div>
+```
 
 ### JS ###
+
+```javascript
 	const startElements = document.querySelectorAll('[data-cpb-animate-stop]');
 	if (startElements.length > 0) {
 		startElements.forEach(el => {
@@ -122,7 +131,7 @@ __data-cpb-animate-stop__
 			});
 		});
 	}
-	
+```	
 
 ---
 
