@@ -1,19 +1,18 @@
 # Circle Progress Bar #
 
 [Ссылка на демо](https://webakira.github.io/CircleProgressBar/public/index.html)
-`
-					<div class="skill" data-cpb="200,100,20,10" data-cpb-animate="3000,0,easeInOutBack">
-						<div class="skill__outer" data-cpb-outer>
-							<div class="skill__inner" data-cpb-inner>
-								<div class="skill__number" data-cpb-number>
-								</div>
-							</div>
-						</div>
-						<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-							<circle></circle>
-						</svg>
-					</div>
-`
+
+`<div class="skill" data-cpb="200,100,20,10" data-cpb-animate="3000,0,easeInOutBack">`
+	`<div class="skill__outer" data-cpb-outer>`
+		`<div class="skill__inner" data-cpb-inner>`
+			`<div class="skill__number" data-cpb-number>`
+			`</div>`
+		`</div>`
+	`</div>`
+	`<svg xmlns="http://www.w3.org/2000/svg" version="1.1">`
+		`<circle></circle>`
+	`</svg>`
+`</div>`
 > ## Структура GULP ##
 > ### Как запустить ###
 > 1. Устанавливаем Node.js
