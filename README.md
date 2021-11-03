@@ -2,17 +2,91 @@
 
 [Ссылка на демо](https://webakira.github.io/CircleProgressBar/public/index.html)
 
-`<div class="skill" data-cpb="200,100,20,10" data-cpb-animate="3000,0,easeInOutBack">`
-	`<div class="skill__outer" data-cpb-outer>`
-		`<div class="skill__inner" data-cpb-inner>`
-			`<div class="skill__number" data-cpb-number>`
-			`</div>`
-		`</div>`
-	`</div>`
-	`<svg xmlns="http://www.w3.org/2000/svg" version="1.1">`
-		`<circle></circle>`
-	`</svg>`
-`</div>`
+## HTML разметка ##
+<div>
+	
+	<div class="skill" data-cpb="200,100,20,10" data-cpb-animate="3000,0,easeInOutBack">
+		<div class="skill__outer" data-cpb-outer>
+			<div class="skill__inner" data-cpb-inner>
+				<div class="skill__number" data-cpb-number>
+				</div>
+			</div>
+		</div>
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<circle></circle>
+		</svg>
+	</div>
+	
+</div>
+
+### Описание аттрибутов ###
+
+__data-cpb__="size,percent,innerBarSize,outerBarSize"
+
+Это обязательный аттрибут, для работы прогресс бара. Все его значения необходимо заполнить.
+
+* *size* - Высота и ширина прогресс бара
+* *percent* - Процент заполнения прогресс бара
+* *innerBarSize* - Ширина линии, которая будет заполняться
+* *outerBarSize* - Ширина линии, которая будет всегда заполнена на 100%
+
+__data-cpb-outer__
+
+Это обязательный аттрибут. Необходим для просчета внутренней ширины и высоты, учитывая ширину *outerBarSize*.
+
+__data-cpb-inner__
+
+Это обязательный аттрибут. Необходим для просчета внутренней ширины и высоты, учитывая ширину *innerBarSize* и *outerBarSize*.
+
+__data-cpb-number__
+
+Это обязательный аттрибут. Сюда вставляются проценты *percent*.
+
+__data-cpb-animate__="duration,delay,property"
+
+Это НЕ обязательный аттрибут. Отвечает за анимированное заполнени.
+
+* *duration* - Длительность анимации
+* *delay* - Задержка перед стартом
+* *property* - Тип анимации (Типы анимации смотрите ниже)
+
+#### Типы анимации ####
+
+[Примеры всех анимаций](https://easings.net/ru)
+
+* easeInSine
+* easeOutSine
+* easeInOutSine
+* easeInQuad
+* easeOutQuad
+* easeInOutQuad
+* easeInCubic
+* easeOutCubic
+* easeInOutCubic
+* easeInQuart
+* easeOutQuart
+* easeInOutQuart
+* easeInQuint
+* easeOutQuint
+* easeInOutQuint
+* easeInExpo
+* easeOutExpo
+* easeInOutExpo
+* easeInCirc
+* easeOutCirc
+* easeInOutCirc
+* easeInBack
+* easeOutBack
+* easeInOutBack
+* easeInElastic
+* easeOutElastic
+* easeInOutElastic
+* easeInBounce
+* easeOutBounce
+* easeInOutBounce
+
+---
+
 > ## Структура GULP ##
 > ### Как запустить ###
 > 1. Устанавливаем Node.js
