@@ -241,6 +241,9 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 -30px -30px -30px;
 }
 
@@ -278,14 +281,6 @@ a {
   .progress-circle__col {
     padding: 0 15px;
     margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .progress-circle__row {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 

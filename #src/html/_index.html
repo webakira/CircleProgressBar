@@ -8,12 +8,6 @@
 		<!-- Разметка элемента -->
 		<div class="progress-circle__row">
 			<!-- 
-			skill - стандартный
-			Значение процентов прописывать в теге <circle>
-		-->
-			<div class="progress-circle__col">
-				<div class="progress-circle__item">
-					<!-- 
 						data-cpb="высота и ширина,процент заполнения,ширина прогресс-бара,ширина внутренней рамки"
 
 						data-cpb-animate="длительность, задержка перед стартом, название анимации"
@@ -23,7 +17,11 @@
 
 						Названия анимаций: https://easings.net/ru
 					-->
-					<div class="skill" data-cpb="200,25,20,10" data-cpb-animate="3000,0,easeInOutSine">
+
+			<div class="progress-circle__col">
+				<div class="progress-circle__item">
+
+					<div class="skill" data-cpb="200,100,20,10" data-cpb-animate="3000,0,easeInOutBack">
 						<div class="skill__outer" data-cpb-outer>
 							<div class="skill__inner" data-cpb-inner>
 								<div class="skill__number" data-cpb-number>
@@ -50,7 +48,7 @@
 
 						Названия анимаций: https://easings.net/ru
 					-->
-					<div class="skill" data-cpb="200,75,20,10" data-cpb-animate="3000,3000,easeInOutSine">
+					<div class="skill" data-cpb="200,90,20,10" data-cpb-animate="3000,3000,easeOutBounce">
 						<div class="skill__outer" data-cpb-outer>
 							<div class="skill__inner" data-cpb-inner>
 								<div class="skill__number" data-cpb-number>
@@ -77,7 +75,34 @@
 
 						Названия анимаций: https://easings.net/ru
 					-->
-					<div class="skill" data-cpb="200,55,20,10" data-cpb-animate="3000,6000,easeInOutSine">
+					<div class="skill" data-cpb="200,75,20,10" data-cpb-animate="3000,6000,easeInBounce">
+						<div class="skill__outer" data-cpb-outer>
+							<div class="skill__inner" data-cpb-inner>
+								<div class="skill__number" data-cpb-number>
+								</div>
+							</div>
+						</div>
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+							<circle></circle>
+						</svg>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="progress-circle__col">
+				<div class="progress-circle__item">
+					<!-- 
+						data-cpb="высота и ширина,процент заполнения,ширина прогресс-бара,ширина внутренней рамки"
+
+						data-cpb-animate="длительность, задержка перед стартом, название анимации"
+						data-cpb-outer - внешняя рамка
+						data-cpb-inner - внутреняя рамка-прогрессбар
+						data-cpb-number - Сюда будут вставляться проценты
+
+						Названия анимаций: https://easings.net/ru
+					-->
+					<div class="skill" data-cpb="200,55,20,10" data-cpb-animate="3000,9000,easeInOutQuad">
 						<div class="skill__outer" data-cpb-outer>
 							<div class="skill__inner" data-cpb-inner>
 								<div class="skill__number" data-cpb-number>

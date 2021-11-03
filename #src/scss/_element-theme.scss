@@ -3,12 +3,10 @@
 	&__row {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 		margin: 0 -30px -30px -30px;
 		@media (max-width: $md5 + px) {
 			margin: 0 -15px -30px -15px;
-		}
-		@media (max-width: $md6 + px) {
-			justify-content: center;
 		}
 	}
 
