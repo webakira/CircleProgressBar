@@ -2,7 +2,7 @@
 
 Круглый прогресс бар который можно анимировать.
 
-[Посмотреть на демо](https://webakira.github.io/CircleProgressBar/public/index.html)
+[Посмотреть демо](https://webakira.github.io/CircleProgressBar/public/index.html)
 
 ## HTML разметка ##
 <div>
